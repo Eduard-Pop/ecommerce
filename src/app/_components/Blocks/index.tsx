@@ -60,7 +60,7 @@ export const Blocks: React.FC<{
             if (disableTopPadding && index === 0) {
               paddingTop = 'none'
             }
-            
+
             if (disableBottomPadding && index === 0) {
               paddingBottom = 'none'
             }
