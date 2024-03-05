@@ -3,8 +3,8 @@ module.exports = {
   extends: ['plugin:@next/next/recommended', '@payloadcms'],
   ignorePatterns: ['**/payload-types.ts'],
   plugins: ['prettier'],
-  rules:{
+  rules: {
     'prettier/prettier': ['warn', { endOfLine: 'auto' }],
     'no-console': 'off',
-  }
+  },
 }
