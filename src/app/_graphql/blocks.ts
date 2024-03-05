@@ -52,8 +52,6 @@ export const ARCHIVE_BLOCK = `
         slug
         title
         priceJSON
-        ${PRODUCT_CATEGORIES}
-        ${META}
       }
     }
   }

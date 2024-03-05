@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { Gutter } from '../../_components/Gutter'
 import { RenderParams } from '../../_components/RenderParams'
 import { getMeUser } from '../../_utilities/getMeUser'
 import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
@@ -16,6 +17,7 @@ export default async function CreateAccount() {
       'Cannot create a new account while logged in, please log out and try again.',
     )}`,
   })
+
   return (
     <section className={classes.createAccount}>
       <div className={classes.heroImg}>
@@ -38,7 +40,8 @@ export default async function CreateAccount() {
             <h3>Create Account</h3>
             <Image src="/assets/icons/hand.png" alt="hand" width={30} height={30} />
           </div>
-          <p>Please enter details </p>
+
+          <p>Please enter details</p>
 
           <CreateAccountForm />
         </div>

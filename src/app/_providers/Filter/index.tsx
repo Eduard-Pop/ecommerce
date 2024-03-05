@@ -1,5 +1,7 @@
 'use client'
-import { createContext, SetStateAction, useContext, useState } from 'react'
+
+import { createContext, ReactNode, SetStateAction, useContext, useState } from 'react'
+
 interface IContextType {
   categoryFilters: string[]
   setCategoryFilters: React.Dispatch<SetStateAction<string[]>>
@@ -33,4 +35,5 @@ export const FilterProvider = ({ children }: { children: React.ReactNode }) => {
     </FilterContext.Provider>
   )
 }
+
 export const useFilter = () => useContext(FilterContext)
