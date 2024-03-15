@@ -93,10 +93,11 @@ export default buildConfig({
   cors: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
     Boolean,
   ),
-  csrf: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
-    Boolean,
+  csrf: [
+    'https://checkout.stripe.com',
+    process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
     'https://ecommerce-production-4202.up.railway.app/',
-  ),
+  ].filter(Boolean),
   endpoints: [
     {
       path: '/create-payment-intent',
