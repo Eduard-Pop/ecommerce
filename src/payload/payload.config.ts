@@ -95,6 +95,7 @@ export default buildConfig({
   ),
   csrf: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
     Boolean,
+    'https://ecommerce-production-4202.up.railway.app/',
   ),
   endpoints: [
     {

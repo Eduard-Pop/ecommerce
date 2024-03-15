@@ -19,7 +19,7 @@ module.exports = async () => {
 
   try {
     const redirectsRes = await fetch(
-      `${process.env.NEXT_PUBLIC_SERVER_URL}/api/redirects?limit=1000&depth=1`,
+      `${process.env.}/api/redirects?limit=1000&depth=1`,
     )
 
     const redirectsData = await redirectsRes.json()
@@ -32,7 +32,7 @@ module.exports = async () => {
         const { from, to: { type, url, reference } = {} } = doc
 
         let source = from
-          .replace(process.env.NEXT_PUBLIC_SERVER_URL, '')
+          .replace(process.env., '')
           .split('?')[0]
           .toLowerCase()
 
@@ -41,7 +41,7 @@ module.exports = async () => {
         let destination = '/'
 
         if (type === 'custom' && url) {
-          destination = url.replace(process.env.NEXT_PUBLIC_SERVER_URL, '')
+          destination = url.replace(process.env., '')
         }
 
         if (
@@ -49,7 +49,7 @@ module.exports = async () => {
           typeof reference.value === 'object' &&
           reference?.value?._status === 'published'
         ) {
-          destination = `${process.env.NEXT_PUBLIC_SERVER_URL}/${
+          destination = `${process.env.}/${
             reference.relationTo !== 'pages' ? `${reference.relationTo}/` : ''
           }${reference.value.slug}`
         }
