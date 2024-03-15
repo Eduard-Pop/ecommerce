@@ -93,7 +93,7 @@ export default buildConfig({
   cors: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
     Boolean,
   ),
-  csrf: ['https://checkout.stripe.com', 'https://ecommerce-production-4202.up.railway.app', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
+  csrf: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
     Boolean,
   ),
   endpoints: [
