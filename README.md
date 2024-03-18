@@ -5,6 +5,4 @@ Here are some screenshots of the application:
 ![Register page](images/registerpage.png)
 ![Home page](images/homepage.png)
 ![Categories page](images/categoriespage.png)
-![Products page](images/productspage.png)
-![Account page](images/accountpage.png)
-![Order page](images/orderpage.png)
+
