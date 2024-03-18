@@ -90,11 +90,9 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-  cors: [
-    'https://checkout.stripe.com',
-    process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
-    'https://ecommerce-production-4202.up.railway.app',
-  ].filter(Boolean),
+  cors: ['https://checkout.stripe.com', process.env.PAYLOAD_PUBLIC_SERVER_URL || ''].filter(
+    Boolean,
+  ),
   csrf: [
     'https://checkout.stripe.com',
     process.env.PAYLOAD_PUBLIC_SERVER_URL || '',
