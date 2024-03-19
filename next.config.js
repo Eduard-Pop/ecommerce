@@ -9,7 +9,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['localhost', process.env.NEXT_PUBLIC_SERVER_URL]
+    domains: [
+      'localhost',
+      process.env.NEXT_PUBLIC_SERVER_URL,
+      'https://ecommerce-production-4202.up.railway.app',
+    ]
       .filter(Boolean)
       .map(url => url.replace(/https?:\/\//, '')),
   },
