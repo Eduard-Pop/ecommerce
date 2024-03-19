@@ -58,7 +58,7 @@ export const cartPage: Partial<Page> = {
             {
               children: [
                 {
-                  text: 'This is a custom layout building block configurable in the CMS—this can be anything you want. Related or suggested products, a blog post, video, etc.',
+                  text: '',
                 },
               ],
             },
@@ -79,7 +79,7 @@ export const cartPage: Partial<Page> = {
         {
           children: [
             {
-              text: 'This is a custom layout building block ',
+              text: '',
             },
             {
               type: 'link',
@@ -87,7 +87,7 @@ export const cartPage: Partial<Page> = {
               url: '/admin',
               children: [
                 {
-                  text: 'configured in the admin dashboard',
+                  text: '',
                 },
               ],
             },
